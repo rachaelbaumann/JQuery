@@ -17,14 +17,14 @@ var friends = [
 
 $().ready(function() {
 
-    var tbody = $("tbody");
+    var tbody = $("#tb");
     tbody.empty();
 
     for(var friend of friends) {
         var row = "<tr>";
         row += "<td>" + friend.name          + "</td>";
         row += "<td>" + friend.favcolor      + "</td>";
-        row += "<td>" + friend.favnumber + "</td>";
+        row += "<td>" + friend.favnumber     + "</td>";
         row += "</tr>";
 
         // put row in tbody tag
